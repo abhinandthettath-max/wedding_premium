@@ -9,10 +9,10 @@ import {
 } from "lucide-react";
 
 const invitation = {
-  groom: "Dr. Jewel",
-  bride: "Dr. Merin",
-  shortGroom: "Jewel",
-  shortBride: "Merin",
+  groom: "Dr. Jewel Abraham",
+  bride: "Dr. Merin V Rose",
+  shortGroom: "Dr. Jewel",
+  shortBride: "Dr.Merin",
   eventName: "Engagement",
   dateParts: ["24", "08", "2026"],
   weekday: "Monday",
@@ -198,9 +198,9 @@ function IntroCover({ isOpen, onOpen }) {
       <div className="intro-content">
         <p className="eyebrow">The Engagement Invitation Of</p>
         <h1>
-          <span>{invitation.groom}</span>
+          <span>{invitation.shortGroom}</span>
           <small>&</small>
-          <span>{invitation.bride}</span>
+          <span>{invitation.shortBride}</span>
         </h1>
         <button className="gold-button" type="button" onClick={onOpen}>
           Open Invitation
@@ -271,7 +271,7 @@ function Couple() {
       <div className="couple-details" data-reveal>
         <Person
           label="The Groom"
-          name={invitation.shortGroom}
+          name={invitation.groom}
           relation="S/O"
           parents={invitation.parents.groom}
         />
@@ -280,7 +280,7 @@ function Couple() {
         </div>
         <Person
           label="The Bride"
-          name={invitation.shortBride}
+          name={invitation.bride}
           relation="D/O"
           parents={invitation.parents.bride}
         />
