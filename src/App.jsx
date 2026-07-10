@@ -3,6 +3,7 @@ import {
   Calendar,
   Clock,
   Heart,
+  Instagram,
   MapPin,
   Navigation,
   X,
@@ -25,6 +26,12 @@ const invitation = {
     groom: "Mr. Abraham K Thomas & Mrs. Elsa Abraham ,Kurichimala House",
     bride: "Mr. Vino Joseph & Mrs. Biji Rose Mathew Oonnukallamattathil House",
   },
+};
+
+const companyInstagram = {
+  handle: "digitalaffairco",
+  url: "https://www.instagram.com/digitalaffairco?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+  logo: "/assets/digital-affairco.svg",
 };
 
 const events = [
@@ -376,6 +383,23 @@ function ThankYou() {
         </p>
         <Heart className="heart" fill="currentColor" />
         <h3>Jewel & Merin</h3>
+      </div>
+      <div className="bottom-branding" data-reveal>
+        <a
+          className="instagram-handle"
+          href={companyInstagram.url}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Open Digital Affair Co on Instagram"
+        >
+          <Instagram aria-hidden="true" />
+          <span>@{companyInstagram.handle}</span>
+        </a>
+        <img
+          className="bottom-logo"
+          src={companyInstagram.logo}
+          alt="Digital Affair Co"
+        />
       </div>
     </section>
   );
