@@ -395,11 +395,7 @@ function ThankYou() {
           <Instagram aria-hidden="true" />
           <span>@{companyInstagram.handle}</span>
         </a>
-        <img
-          className="bottom-logo"
-          src={companyInstagram.logo}
-          alt="Digital Affair Co"
-        />
+
       </div>
     </section>
   );
